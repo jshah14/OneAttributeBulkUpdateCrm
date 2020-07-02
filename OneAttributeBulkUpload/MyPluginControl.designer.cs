@@ -60,6 +60,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.ActiveRecordsLabel = new System.Windows.Forms.Label();
             this.activeRecordsCheckBox = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoadEntitiesButton
@@ -132,7 +133,7 @@
             // 
             // delimeterTextBox
             // 
-            this.delimeterTextBox.Location = new System.Drawing.Point(298, 420);
+            this.delimeterTextBox.Location = new System.Drawing.Point(298, 433);
             this.delimeterTextBox.Name = "delimeterTextBox";
             this.delimeterTextBox.Size = new System.Drawing.Size(274, 20);
             this.delimeterTextBox.TabIndex = 9;
@@ -190,7 +191,7 @@
             // 
             // entityRefLable1
             // 
-            this.entityRefLable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entityRefLable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entityRefLable1.Location = new System.Drawing.Point(40, 220);
             this.entityRefLable1.Name = "entityRefLable1";
             this.entityRefLable1.Size = new System.Drawing.Size(252, 60);
@@ -212,7 +213,7 @@
             // 
             // firstColumnLable1
             // 
-            this.firstColumnLable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstColumnLable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstColumnLable1.Location = new System.Drawing.Point(40, 299);
             this.firstColumnLable1.Name = "firstColumnLable1";
             this.firstColumnLable1.Size = new System.Drawing.Size(252, 45);
@@ -240,7 +241,7 @@
             // delimeterSelectLabel
             // 
             this.delimeterSelectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delimeterSelectLabel.Location = new System.Drawing.Point(39, 416);
+            this.delimeterSelectLabel.Location = new System.Drawing.Point(39, 429);
             this.delimeterSelectLabel.Name = "delimeterSelectLabel";
             this.delimeterSelectLabel.Size = new System.Drawing.Size(197, 29);
             this.delimeterSelectLabel.TabIndex = 37;
@@ -282,8 +283,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(637, 18);
             this.label2.TabIndex = 43;
-            this.label2.Text = "> For DateTime attrbutes to be updated, pass the date values in \"yyyy-MM-dd HH:mm" +
-    " tt\" format, for e.g. \"2020-01-25 00:00 AM\"";
+            this.label2.Text = "> For DateTime attrbutes to be updated, pass the date values in \"M/d/yyyy h:mm\" f" +
+    "ormat, for e.g. \"5/30/2020 12:00\"";
             // 
             // label3
             // 
@@ -350,8 +351,8 @@
             // 
             // ActiveRecordsLabel
             // 
-            this.ActiveRecordsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActiveRecordsLabel.Location = new System.Drawing.Point(40, 459);
+            this.ActiveRecordsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActiveRecordsLabel.Location = new System.Drawing.Point(40, 472);
             this.ActiveRecordsLabel.Name = "ActiveRecordsLabel";
             this.ActiveRecordsLabel.Size = new System.Drawing.Size(252, 45);
             this.ActiveRecordsLabel.TabIndex = 50;
@@ -360,16 +361,27 @@
             // activeRecordsCheckBox
             // 
             this.activeRecordsCheckBox.AutoSize = true;
-            this.activeRecordsCheckBox.Location = new System.Drawing.Point(299, 459);
+            this.activeRecordsCheckBox.Location = new System.Drawing.Point(299, 472);
             this.activeRecordsCheckBox.Name = "activeRecordsCheckBox";
             this.activeRecordsCheckBox.Size = new System.Drawing.Size(15, 14);
             this.activeRecordsCheckBox.TabIndex = 51;
             this.activeRecordsCheckBox.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(374, 391);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(318, 32);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Note : Expected File Extenstion is txt. First column and Second column values sho" +
+    "uld be seperated by delimeter specified";
+            // 
             // MyPluginControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.activeRecordsCheckBox);
             this.Controls.Add(this.ActiveRecordsLabel);
             this.Controls.Add(this.label6);
@@ -443,5 +455,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label ActiveRecordsLabel;
         private System.Windows.Forms.CheckBox activeRecordsCheckBox;
+        private System.Windows.Forms.Label label7;
     }
 }

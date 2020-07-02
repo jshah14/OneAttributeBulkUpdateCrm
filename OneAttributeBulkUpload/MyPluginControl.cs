@@ -28,8 +28,6 @@ namespace OneAttributeBulkUpload
 
         private void MyPluginControl_Load(object sender, EventArgs e)
         {
-            ShowInfoNotification("This is a notification that can lead to XrmToolBox repository", new Uri("https://github.com/MscrmTools/XrmToolBox"));
-
             // Loads or creates the settings for the plugin
             if (!SettingsManager.Instance.TryLoad(GetType(), out mySettings))
             {
@@ -43,10 +41,6 @@ namespace OneAttributeBulkUpload
             }
         }
 
-        private void tsbClose_Click(object sender, EventArgs e)
-        {
-            CloseTool();
-        }
         /// <summary>
         /// This event occurs when the plugin is closed
         /// </summary>
@@ -625,7 +619,7 @@ namespace OneAttributeBulkUpload
                     var ecEntity = crmHelper.GetEntityCollection(qEntity);
                     if (ecEntity.Entities.Count == 0)
                     {
-                        stringBuilder.AppendLine($"Record : {i + 1} , No record found for the entity {entityName} for Attribute {uniqueAttributeName} with value - {item.UniqueAttrValue} ");
+                        stringBuilder.AppendLine($"Record : {i + 1} , No record or No Active found for the entity {entityName} for Attribute {uniqueAttributeName} with value - {item.UniqueAttrValue} ");
                     }
                     if (ecEntity.Entities.Count > 1)
                     {
@@ -698,7 +692,7 @@ namespace OneAttributeBulkUpload
             }
             else if (attrType.Equals(AttributeType.DateTime.ToString(), StringComparison.CurrentCultureIgnoreCase))
             {
-                entityToUpd[updAttrName] = DateTime.ParseExact(fileRecord.UpdateAttrValue, "yyyy-MM-dd HH:mm tt", null);
+                entityToUpd[updAttrName] = DateTime.ParseExact(fileRecord.UpdateAttrValue, "M/d/yyyy h:mm", null);
             }
             else if (attrType.Equals(AttributeType.Picklist.ToString(), StringComparison.CurrentCultureIgnoreCase) ||
                 attrType.Equals(AttributeType.State.ToString(), StringComparison.CurrentCultureIgnoreCase) ||

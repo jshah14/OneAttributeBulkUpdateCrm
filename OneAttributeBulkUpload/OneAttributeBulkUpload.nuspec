@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>OneAttributeBulkUpload</id>
+    <version>1.1.1.0</version>
+    <title>OneAttributeBulkUpload</title>
+    <authors>Jigesh Shah</authors>
+    <owners>Jigesh Shah</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/jshah14/OneAttributeBulkUpdateCrm</projectUrl>
+    <iconUrl>https://github.com/jshah14/OneAttributeBulkUpdateCrm/blob/master/OneAttributeBulkUpload/Images/download_64_64.jpg</iconUrl>
+    <description>Use to update one attribute in bulk</description>
+    <releaseNotes>Use to update one attribute in bulk</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>PowerApps</tags>
+  </metadata>
+</package>
