@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>OneAttributeBulkUpload</id>
-    <version>1.1.1.0</version>
-    <title>OneAttributeBulkUpload</title>
+    <version>1.3.0.0</version>
+    <title>One Attribute Bulk Upload</title>
     <authors>Jigesh Shah</authors>
     <owners>Jigesh Shah</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,4 +15,7 @@
     <copyright>Copyright 2020</copyright>
     <tags>PowerApps</tags>
   </metadata>
+  <files>
+    <file src="bin\Debug\OneAttributeBulkUpload.dll" target="lib\net462\Plugins"></file>
+  </files>
 </package>
