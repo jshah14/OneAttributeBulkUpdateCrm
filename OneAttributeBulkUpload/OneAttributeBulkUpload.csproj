@@ -153,8 +153,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\download_32_32.jpg" />
-    <Content Include="Images\download_64_64.jpg" />
+    <Content Include="Images\Image_icon32.jpeg" />
+    <Content Include="Images\Image_icon80.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
